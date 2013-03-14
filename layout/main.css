@@ -1,0 +1,17 @@
+body{
+	margin:2px auto;
+	padding: 0;
+	width:60%;
+	font-family:sans-serif;
+}
+h1{
+	text-align:center;
+}
+footer{
+	margin-top:20px;
+	padding-top:20px;
+	border-top:1px dashed black;
+}
+a:link, a:visited{
+	color:rgb(100,100,255);
+}
