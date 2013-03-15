@@ -26,17 +26,16 @@ class Post{
 function posts(){
 	$posts = array();
 	//Now handle $posts
+	$dir = scandir(POST_DIR,1);
 	$i = 0;
-        $handle = opendir(POST_DIR);
-        while(false !== ($filename = readdir($handle))){
+	foreach($dir as $filename){
 		if(substr($filename,0,1) != "."){
-                       	$post = new Post($filename);
+                      	$post = new Post($filename);
                        	$posts[$i] = clone $post;
                        	$post = null;
                        	$i += 1;
 		}
-       	}
-	closedir($handle);
+	}
 	return $posts;
 }
 
