@@ -5,7 +5,9 @@ A simple file based blogging system. By [@lukasepple](http://twitter.com/lukasep
 * edit `system/config.php`
 	* change `BASE_URL` to the Base url of your installation
 	* change `BLOG_NAME`
-	* If you want locate your post otherwhere and change `POST_DIR`  
+	* If you want locate your post otherwhere and change `POST_DIR`
+* edit `.htaccess`
+	* change `RewriteBase /~lukasepple/blog` to `RewriteBase /path/to/your/blog`
 
 ## Add a post
 * place a file in your `POST_DIR`
