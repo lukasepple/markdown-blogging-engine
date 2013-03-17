@@ -1,17 +1,135 @@
-body{
-	margin:2px auto;
-	padding: 0;
-	width:60%;
+*{
 	font-family:sans-serif;
+	font-size:17px;
+	line-height:1.3em;
+	color:#444;
+	margin:0;
+	padding:0;
+}
+a:link,a:visited{
+	color:rgb(72, 131, 219);
+}
+a:hover, a:active, a:focus{
+	text-decoration:none;
+}
+strong, b{
+	font-weight:bold;
+}
+em, i{
+	font-style:italic;
+}
+u{
+	text-decoration:underline;
+}
+h1,h2,h3,h4,h5,h6{
+	color:black;
+	margin:0.5em 0;
 }
 h1{
+	font-size:2em;
+	font-weight:bold;
+	font-style:normal;
+	text-align: center;
+}
+h2{
+	font-size:1.8em;
+	font-weight:bold;
+	font-style:normal;
+	text-align: center;
+}
+h3{
+	font-size:1.6em;
+	font-weight:bold;
+	font-style:normal;
+}
+h4{
+	font-size:1.4em;
+	font-weight:bold;
+	font-style:normal;
+}
+h5{
+	font-size:1.2em;
+	font-weight:bold;
+	font-style:normal;
+}
+h6{
+	font-size:1.1em;
+	font-weight:bold;
+	font-style:normal;
+}
+/*MISC#####################################
+#########################################*/
+code, pre{
+	font-family:Monaco,'American Typewriter', monospace;
+	font-size:0.8em;
+	color:#666;
+}
+code{
+	
+}
+pre code{
+	background:0;
+}
+pre{
+	margin:3px 20px;
+}
+hr{
+	border:none;
+	border-bottom:1px solid #ccc;
+	margin:3px 0;
+}
+blockquote{
+	font-style:italic;
+	font-family:Georgia, serif;
+	padding-bottom:25px;
+	margin-left:20px;
+}
+blockquote:before{
+	content: '“';
+	font-size:40px;
+	line-height:0.5em;
+	margin:-10px;
+	color:rgb(200,200,200);
+}
+blockquote p{
+	font-family:Georgia, serif;
+}
+table{
+	border-collapse:collapse;
+	margin:3px 0;
+}
+td,th{
+	padding:5px;
+	border:1px solid #ccc;
+	margin:0;
+}
+/*##################
+# Layout ###########
+##################*/
+body{
+        width:50%;
+        margin:0px auto;
+}
+header{
 	text-align:center;
+	margin-bottom:10px;
 }
 footer{
-	margin-top:20px;
-	padding-top:20px;
+	padding-top:5px;
+	margin-top:5px;
 	border-top:1px dashed black;
 }
-a:link, a:visited{
-	color:rgb(100,100,255);
+@media (max-width:700px){
+	body{
+		width:99%;
+	}
+}
+.bigbutton{
+	text-align:center;
+	color:#999 !important;
+	text-decoration:none !important;
+	display:block;
+	border:1px solid #ccc;
+	border-radius:7px;
+	padding:10px;
 }

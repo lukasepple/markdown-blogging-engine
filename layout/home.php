@@ -1,6 +1,6 @@
 <?php
 foreach($posts as $post){
 	echo $post->content;
-	echo "<a href='". $post->url ."'>Permalink</a>";
+	echo "<a class='bigbutton' href='". $post->url ."'>Read this Post&rarr;</a>";
 }
 ?>
