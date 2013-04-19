@@ -22,3 +22,6 @@ Title
 - YYYY-MM-TT
 my awesome content
 ```
+
+## Create own templates
+[I wrote some documentation!](https://github.com/lukasepple/markdown-blogging-engine/wiki)
