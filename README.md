@@ -19,6 +19,6 @@ __a `install.php` is comming soon!__
 
 ```markdown
 Title
-- 9999-12-12
+- YYYY-MM-TT
 my awesome content
 ```
