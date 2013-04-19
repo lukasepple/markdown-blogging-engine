@@ -24,11 +24,12 @@ class Posts{
 		foreach($dir as $filename){
 			if(substr($filename,0,1) != "."){
             	$post = new Post($filename);
-                $posts[$i] = clone $post;
+                $posts[$post->date] = clone $post;
                 $post = null;
                 $i += 1;
 			}
 		}
+		krsort($posts);
 		return $posts;
 	}
 	public function get($filename){
