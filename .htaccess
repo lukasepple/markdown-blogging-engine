@@ -1,18 +1,11 @@
 # .htaccess
-
-  ErrorDocument 404 /p/miau/404.html
-# ErrorDocument 401 "401
-# ErrorDocument 402 "402
-# ErrorDocument 403 "403
 # Nicer urls!
   <IfModule mod_rewrite.c>
   	RewriteEngine On
-  	RewriteBase /~lukasepple/blog/
-	#Add Category support
-	#RewriteRule (^)category/(.+)$ $1index.php?cat=$2
+  	RewriteBase /p/mbe/
  	RewriteCond %{REQUEST_FILENAME} !-f
  	RewriteCond %{REQUEST_FILENAME} !-d
- 	RewriteRule (^)(.+)/(.+)/(.+)/(.+)$ $1index.php?q=$2-$3-$4-$5.md
+ 	RewriteRule (^)(.+)$ $1index.php?q=$2.md
   </IfModule>
 # Don't look at me!
   <Files .htaccess>
