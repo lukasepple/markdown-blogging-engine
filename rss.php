@@ -24,8 +24,9 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
     		<language>de-de</language>
     		<copyright><?php echo TWITTER; ?></copyright>
     		<pubDate><?php echo date("r"); ?></pubDate>
-			<?php 
-			foreach($posts->get_all() as $postinfo){ ?>
+			<?php $c = 0;
+			foreach($posts->get_all() as $postinfo){ 
+				if($c == 20){ break; } ?>
 				<item>
 				      <title><?php echo $postinfo->title; ?></title>
 				      <description><![CDATA[<?php echo $postinfo->content; ?>]]></description>
@@ -34,7 +35,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 				      <guid><?php echo $postinfo->url; ?></guid>
 				      <pubDate><?php echo date_format($postinfo->timestamp, "r"); ?></pubDate>
 				 </item>
-				 <?php } ?>
+				 <?php $c += 1; } ?>
 			
 	
 	</channel>
