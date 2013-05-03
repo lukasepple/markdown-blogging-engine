@@ -28,7 +28,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 			foreach($posts->get_all() as $postinfo){ ?>
 				<item>
 				      <title><?php echo $postinfo->title; ?></title>
-				      <description><?php echo str_replace("<br />", "\n", $postinfo->content); ?></description>
+				      <description><![CDATA[<?php echo $postinfo->content; ?>]]></description>
 				      <link><?php echo $postinfo->url; ?></link>
 				      <author><?php echo TWITTER; ?></author>
 				      <guid><?php echo $postinfo->url; ?></guid>
