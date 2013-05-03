@@ -5,6 +5,7 @@ class Post{
 		//Getting the metadata
 		$this->title = str_replace("\n", "", $file[0]);
 		$this->date = str_replace("\n", "", substr($file[1], 2));
+		$this->timestamp = date_create_from_format("Y-m-d H:i", $this->date);
 		$this->url = BASE_URL.rawurlencode(substr($filename, 0, -3));
 		//Empty it!
 		$file[0] = "";
