@@ -1,5 +1,6 @@
 # markdown-blogging-engine
-A simple file based blogging system. By [@lukasepple](http://twitter.com/lukasepple), ask your Questions at Twitter.
+A simple file based blogging system. By [@lukasepple](http://twitter.com/lukasepple), ask your Questions at Twitter.  
+See it in action [at my blog](http://lukasepple.de/blog/)
 ## Installation
 * Upload everything to your server
 * Open `settings.php` in your Browser log in with '42' (**Change the password, too!**) or:
