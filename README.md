@@ -1,5 +1,18 @@
 # markdown-blogging-engine
 A simple file based blogging system. By [@lukasepple](http://twitter.com/lukasepple), ask your Questions at Twitter.
+## Changelog
+### v 0.9  
+Added Support for Pagination:  
+`$posts->get_all($page, $max_posts_per_page)` expects now two paramenters. (`$page` is provided as `$page` already).  
+Add Pagination like that:  
+```
+echo "<p>";
+if($page != 1){
+	echo "<a href=\"./?page=". ($page - 1) ."\">Newer</a> &ndash; ";
+}
+echo "<a href='./?page=". ($page + 1) ."'>Older</a>";
+echo "</p>";
+```
 ## Installation
 * Upload everything to your server
 * Open `settings.php` in your Browser log in with '42' (**Change the password, too!**) or:

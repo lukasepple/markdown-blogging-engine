@@ -2,6 +2,11 @@
 require_once("system/config.php");
 require_once("system/php-markdown/markdown.php");
 require_once("system/classes.php");
+if(!isset($_GET['page'])){
+	$page = 1;
+}else{
+	$page = $_GET['page'];
+}
 $posts = new Posts();
 if(isset($_GET['q'])){
 	$query = rawurldecode(trim($_GET['q']));
