@@ -1,5 +1,6 @@
 # markdown-blogging-engine
-A simple file based blogging system. By [@lukasepple](http://twitter.com/lukasepple), ask your Questions at Twitter.
+A simple file based blogging system.  
+See it in action [at my blog](http://lukasepple.de/blog/)
 ## Changelog
 ### v 0.9  
 Added Support for Pagination:  
