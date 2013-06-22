@@ -46,7 +46,7 @@ class Posts{
 		$first = ($page - 1) * $page_max_posts;
 		$last = $first + $page_max_posts;
 		foreach($all_posts as $num => $post){
-			if($num >= $first && $num <= $last){
+			if($num >= $first && $num < $last){
 				$posts[$post->date] = $post;
 			}
 		}
