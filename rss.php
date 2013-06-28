@@ -34,6 +34,6 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 				      <pubDate><?php echo date_format($postinfo->timestamp, "r"); ?></pubDate>
 				 </item>
 			
-	
+<?php } ?>	
 	</channel>
 </rss>
