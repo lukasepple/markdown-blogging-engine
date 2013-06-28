@@ -16,6 +16,7 @@ if(isset($_GET['q'])){
 		require_once("template/".TEMPLATE."/single.php");
 		require_once("template/".TEMPLATE."/footer.php");
 	}else{
+		header("HTTP/1.0 404 Not Found");
 		require_once("template/".TEMPLATE."/header.php");
 		require_once("template/".TEMPLATE."/404.php");
 		require_once("template/".TEMPLATE."/footer.php");
