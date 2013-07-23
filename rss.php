@@ -26,7 +26,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
     		<pubDate><?php echo date("r"); ?></pubDate>
 			<?php foreach($posts->get_all(1, 10) as $postinfo){ ?>
 				<item>
-				      <title><?php echo $postinfo->title; ?></title>
+				      <title><?php echo htmlspecialchars($postinfo->title); ?></title>
 				      <description><![CDATA[<?php echo $postinfo->content; ?>]]></description>
 				      <link><?php echo $postinfo->url; ?></link>
 				      <author><?php echo TWITTER; ?></author>
