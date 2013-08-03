@@ -9,7 +9,7 @@ if(!isset($_GET['page'])){
 }
 $posts = new Posts();
 if(isset($_GET['q'])){
-	$query = rawurldecode(trim($_GET['q']));
+	$query = str_replace('.', '', rawurldecode(trim($_GET['q']))) . ".md";
 	if(file_exists(POST_DIR . "/" . $query)){
 		$post = new Post($query);
 		require_once("template/".TEMPLATE."/header.php");

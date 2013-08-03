@@ -1,14 +1,8 @@
 # .htaccess
-# Nicer urls!
   <IfModule mod_rewrite.c>
   	RewriteEngine On
   	RewriteBase /p/mbe/
  	RewriteCond %{REQUEST_FILENAME} !-f
  	RewriteCond %{REQUEST_FILENAME} !-d
- 	RewriteRule (^)(.+)$ $1index.php?q=$2.md
+ 	RewriteRule (^)(.+)$ $1index.php?q=$2
   </IfModule>
-# Don't look at me!
-  <Files .htaccess>
-    order allow,deny
-    deny from all
-  </Files>
