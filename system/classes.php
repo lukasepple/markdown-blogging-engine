@@ -7,6 +7,7 @@ class Post{
 		$this->date = str_replace("\n", "", substr($file[1], 2));
 		$this->timestamp = date_create_from_format("Y-m-d H:i", $this->date);
 		$this->url = BASE_URL.rawurlencode(substr($filename, 0, -3));
+		$this->filename = $filename;
 		//Empty it!
 		$file[0] = "";
 		$file[1] = "";
