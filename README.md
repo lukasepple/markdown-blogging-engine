@@ -31,6 +31,7 @@ echo "</p>";
 	* If you want locate your post otherwhere and change `POST_DIR`
 	* Your `TEMPLATE` is the name of the folder, like `simple`
 	* `TWITTER`and `MAIL`are clear, aren't they.
+* move `htaccess.txt` to `.htaccess`
 * edit `.htaccess`
 	* change `RewriteBase` to `RewriteBase /path/to/your/blog`
 
