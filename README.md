@@ -7,7 +7,9 @@ See it in action [at my blog](http://lukasepple.de/blog/)
 * [You are able to configure your timezone](https://github.com/lukasepple/markdown-blogging-engine/commit/7a74aee0e0bf3b88e80cdcd621dd3cf0d7d97f6f#L2R2)
 * [`$post->filename` was added](https://github.com/lukasepple/markdown-blogging-engine/commit/490ac32af904eb9aa27541e791a8275ab228c2ac)
 * [Security issue closed](https://github.com/lukasepple/markdown-blogging-engine/commit/e249fe57da50e98c1fd5da6298800f1c40315d88)
-* Moved config.php to config.sample.php
+* Moved config.php to config.sample.php (See Installation)
+* Moved .htaccess to htaccess.txt (See Installation)
+* [Post that are dated to the future are published in the future now.](https://github.com/lukasepple/markdown-blogging-engine/commit/3fc5f71e7064f1da423173e145bf120175158d51)
 
 ### v 0.9  
 Added Support for Pagination:  
