@@ -7,7 +7,7 @@ See it in action [at my blog](http://lukasepple.de/blog/)
 * [You are able to configure your timezone](https://github.com/lukasepple/markdown-blogging-engine/commit/7a74aee0e0bf3b88e80cdcd621dd3cf0d7d97f6f#L2R2)
 * [`$post->filename` was added](https://github.com/lukasepple/markdown-blogging-engine/commit/490ac32af904eb9aa27541e791a8275ab228c2ac)
 * [Security issue closed](https://github.com/lukasepple/markdown-blogging-engine/commit/e249fe57da50e98c1fd5da6298800f1c40315d88)
-
+* Moved config.php to config.sample.php
 ### v 0.9  
 Added Support for Pagination:  
 `$posts->get_all($page, $max_posts_per_page)` expects now two paramenters. (`$page` is provided as `$page` already).  
@@ -22,6 +22,7 @@ echo "</p>";
 ```
 ## Installation
 * Upload everything to your server
+* move `system/config.sample.php` to `system/config.php`
 * edit `system/config.php`
 	* change your timezone
 	* change `BASE_URL` to the Base url of your installation
