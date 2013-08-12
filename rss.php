@@ -31,7 +31,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 				      <link><?php echo $postinfo->url; ?></link>
 				      <author><?php echo TWITTER; ?></author>
 				      <guid><?php echo $postinfo->url; ?></guid>
-				      <pubDate><?php echo date_format($postinfo->timestamp, "r"); ?></pubDate>
+				      <pubDate><?php echo date("r", $postinfo->timestamp); ?></pubDate>
 				 </item>
 			
 <?php } ?>	
