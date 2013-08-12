@@ -42,9 +42,12 @@ class Posts{
 		
 		$i = 0;
 		foreach($all_posts as $key => $post){
-			$posts_numberd[$i] = $post;
-			$i = $i + 1;
+			if($post->timestamp <= time()){
+				$posts_numberd[$i] = $post;
+				$i = $i + 1;
+			}
 		}
+		
 		unset($all_posts);
 		$all_posts = $posts_numberd;
 		unset($posts_numberd);
