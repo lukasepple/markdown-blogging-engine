@@ -104,6 +104,7 @@ code{
 }
 pre{
 	margin:3px 20px;
+	overflow:auto;
 }
 hr{
 	border:none;
