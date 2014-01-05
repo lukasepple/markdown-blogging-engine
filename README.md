@@ -50,5 +50,5 @@ my awesome content
 
 ## Create own templates
 [I wrote some documentation!](https://github.com/lukasepple/markdown-blogging-engine/wiki)
-## lighthttpd
+## lighttpd
 [Config by markuman](https://github.com/lukasepple/markdown-blogging-engine/issues/2)
