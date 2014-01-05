@@ -65,6 +65,20 @@ class Posts{
 	public function get($filename){
 		return new Post($filename);
 	}
+	public function get_archive(){
+		// Returns all posts
+		$posts = array();
+		$dir = scandir(POST_DIR,1);
+		foreach($dir as $filename){
+			if(substr($filename,0,1) != "."){
+				$post = new Post($filename);
+				$posts[$post->date] = clone $post;
+				$post = null;
+			}
+		}
+		krsort($posts);
+		return $posts;
+	}
 }
 
 ?>
