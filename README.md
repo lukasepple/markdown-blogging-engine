@@ -2,6 +2,11 @@
 A simple file based blogging system.  
 See it in action [at my blog](http://lukasepple.de/blog/)
 ## Changelog
+### v 1.0
+* added `$posts->get_archive()`
+* added `archive.php`
+	* now `template/YOURTEMPLATE/archive.php` is required. [Sample Code](./template/simple/archive.php)
+
 ### v 0.9.1
 * [`$post->timestamp` is now a real Timestamp, no `DateTime`-Thing anymore](https://github.com/lukasepple/markdown-blogging-engine/commit/7a74aee0e0bf3b88e80cdcd621dd3cf0d7d97f6f)
 * [You are able to configure your timezone](https://github.com/lukasepple/markdown-blogging-engine/commit/7a74aee0e0bf3b88e80cdcd621dd3cf0d7d97f6f#L2R2)
