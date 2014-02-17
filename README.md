@@ -53,6 +53,9 @@ Title
 my awesome content
 ```
 
+## I want WYSIWYG!
+Awesome [markuman](https://github.com/markuman/mbe-writer) wrote [mbe-writer](https://github.com/markuman/mbe-writer)! Now your life is (maybe) better!
+
 ## Create own templates
 [I wrote some documentation!](https://github.com/lukasepple/markdown-blogging-engine/wiki)
 ## lighttpd
