@@ -1,6 +1,6 @@
 # markdown-blogging-engine
 A simple file based blogging system.  
-See it in action [at my blog](http://lukasepple.de/blog/)
+
 ## Changelog
 ### v 1.0
 * added `$posts->get_archive()`
