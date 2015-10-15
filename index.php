@@ -11,7 +11,7 @@ try {
 	}
 
 	require_once($system_path."/php-markdown/markdown.php");
-	require_once($system_path."system/classes.php");
+	require_once($system_path."/classes.php");
 
 	// Set the inital page if get is empty
 	if(!isset($_GET['page'])){
@@ -21,7 +21,7 @@ try {
 	}
 
 	// Generate new Posts Object from Classes
-	$posts = new Posts();
+	$posts = new mbe\core\classes\Posts();
 	if(isset($_GET['q'])){
 		$query = str_replace('.', '', rawurldecode(trim($_GET['q']))) . ".md";
 		if(file_exists(POST_DIR . "/" . $query)){
